@@ -9,7 +9,14 @@ h2{
 }
 
 body{
+    font-size: 15px;
+    line-height: 2;
     background-color: black;
+    text-align: center;
+}
+
+ul{
+    text-align: center;
 }
 
 .Bio{
@@ -18,7 +25,6 @@ body{
     color: aliceblue;
 }
 
-#Imagem-leo{
-    border-radius: 20px;
-    box-shadow: 5px 0 5px aliceblue;
+.imagem{
+    border-radius: 300px;
 }
