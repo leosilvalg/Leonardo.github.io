@@ -1,0 +1,24 @@
+h1{
+    font-family: 'montserrat';
+    color: antiquewhite;
+}
+
+h2{
+    text-align: center;
+    color: antiquewhite;
+}
+
+body{
+    background-color: black;
+}
+
+.Bio{
+    
+    font-family: monospace;
+    color: aliceblue;
+}
+
+#Imagem-leo{
+    border-radius: 20px;
+    box-shadow: 5px 0 5px aliceblue;
+}
