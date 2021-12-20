@@ -23,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #1a1a1a;
+  z-index: 9;
 }
 
 .grupo {
@@ -46,10 +47,88 @@ body {
   opacity: 1;
 }
 
-/* body{
-    font-size: 15px;
-    line-height: 2;
-    background-color: black;
-    text-align: center;
-} */
+.home-section {
+  width: 100%;
+  height: 100vh;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  position:fixed;
+  top: 0;
+  opacity: 0;
+  transition: 1s;
+}
 
+.nome {
+  color: #fff;
+  font-size: 120px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.foto {
+  border-radius: 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.home-section.active, .sobreMim.active {
+  position: relative;
+  opacity: 1;
+  z-index: 8;
+}
+
+.sobreMim {
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 100px 0;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.sobre {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 65%;
+}
+
+.sobreTexto {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify;
+  
+}
+
+.sobreImagem {
+  position: relative;
+}
+
+.imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0 30px 0 0;
+}
+
+.botao {
+  color: #fff;
+  font-size: 16px;
+  transition: .5s;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  position: absolute;
+  left: 45%;
+  bottom: -50px;
+  transform: translateX(-50%);
+}
