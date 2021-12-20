@@ -1,0 +1,30 @@
+h1{
+    font-family: 'montserrat';
+    color: antiquewhite;
+}
+
+h2{
+    text-align: center;
+    color: antiquewhite;
+}
+
+body{
+    font-size: 15px;
+    line-height: 2;
+    background-color: black;
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+}
+
+.Bio{
+    
+    font-family: monospace;
+    color: aliceblue;
+}
+
+.imagem{
+    border-radius: 300px;
+}
