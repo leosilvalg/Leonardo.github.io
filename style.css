@@ -77,7 +77,7 @@ body {
   opacity: 0.2;
 }
 
-.home-section.active, .sobreMim.active {
+.home-section.active, .sobreMim.active, .projects.active {
   position: relative;
   opacity: 1;
   z-index: 8;
@@ -140,6 +140,91 @@ body {
   background: #1a1a1a;
 }
 
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 100px 100px;
+  position: fixed;
+  top: 0;
+  transition: 1s;
+  opacity: 0;
+}
+.projetosTitulo {
+  font-size: 100px;
+  background-color: #252525;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #1a1a1a;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 8px transparent;
+}
+
+.projeto-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+}
+
+.projeto-card {
+  height: 400px;
+  position: relative;
+}
+
+.projeto-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.projeto-content{
+  position: relative;
+  padding: 40px;
+  color: #fff;
+  transition: .5s;
+  opacity: 0;
+}
+
+.projeto-titulo{
+  font-size: 50px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 300;
+}
+
+.projeto-info{
+  margin: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.projeto-btn{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.projeto-btn-git{
+  height: 40px;
+  text-transform: capitalize;
+  font-size: 18px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
 
 
+.projeto-card:hover .projeto-img{
+  filter: blur(20px);
+}
 
+.projeto-card:hover .projeto-content{
+  opacity: 1;
+}
