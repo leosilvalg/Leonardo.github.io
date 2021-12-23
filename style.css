@@ -77,7 +77,7 @@ body {
   opacity: 0.2;
 }
 
-.home-section.active, .sobreMim.active, .projects.active {
+.home-section.active, .sobreMim.active, .projects.active, .contato.active{
   position: relative;
   opacity: 1;
   z-index: 8;
@@ -90,7 +90,6 @@ body {
   position: fixed;
   top: 0;
   opacity: 0;
-  transition: 1s;
 }
 
 .sobre {
@@ -146,7 +145,6 @@ body {
   padding: 150px 100px 100px;
   position: fixed;
   top: 0;
-  transition: 1s;
   opacity: 0;
 }
 .projetosTitulo {
@@ -218,6 +216,16 @@ body {
   background: #000;
   color: #fff;
   cursor: pointer;
+  text-align: center;
+}
+
+.project-btn-live{
+  background: none;
+  border: 2px solid #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 18px;
 }
 
 
@@ -227,4 +235,49 @@ body {
 
 .projeto-card:hover .projeto-content{
   opacity: 1;
+}
+
+.contato {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  padding: 100px 150px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.form-contato input, .form-contato textarea {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+#msg {
+  height: 280px;
+  resize: none;
+  font-family: sans-serif;
+}
+
+.botaoForm {
+  background: #ff4f4f;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 15px 40px;
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }

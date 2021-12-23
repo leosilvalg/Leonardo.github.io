@@ -12,25 +12,27 @@
       <nav class="barraNavegacao">
         <ul class="grupo">
           <li class="link active"><a href="#">Home</a></li>
-          <li class="link"><a href="#sobreMim">Sobre mim</a></li>
+          <li class="link"><a href="#sobreLeo">Sobre mim</a></li>
           <li class="link"><a href="#projeto">Projetos</a></li>
-          <li class="link"><a href="#">Contato</a></li>
+          <li class="link"><a href="#contact">Contato</a></li>
         </ul>
       </nav>
     </header>
     <section class="home-section active">
       <h1 class="nome">Olá, eu sou o <br> Leonardo</h1>
     </section>
-    <section class="sobreMim active">
+    <section id="sobreLeo" class="sobreMim">
       <div class="sobre">
         <div class="sobreImagem">
           <img src="./imagens/Leonardo.jpg" class="imagem" alt="">
           <button class="botao">Download cv</button>
         </div>
-        <p class="sobreTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, blanditiis veniam esse ipsam accusantium temporibus sapiente libero consequatur veritatis nisi, illum et nam doloremque laborum deleniti cupiditate sunt officia rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum optio et reprehenderit, explicabo nostrum ullam adipisci ad impedit dignissimos possimus minima facilis quo enim voluptate sunt est eius. Consequuntur, ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolores recusandae quia consequatur qui, id nostrum, esse placeat facere repudiandae possimus eligendi sit dolorum dicta impedit veritatis, blanditiis quibusdam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, modi. Nemo repellendus architecto dolorum ducimus id, consectetur perspiciatis pariatur accusantium nostrum, ab explicabo quas. Vero harum earum placeat sequi quis.</p>
+        <p class="sobreTexto">Bem vindos e bem vindas ao meu portifólio pessoal. Sou o Leonardo, tenho 27 anos, e sou aluno de desenvolvimento web full stack na Trybe - Turma 19. Previsão de término do curso - Novembro de 2022.
+        <br>
+        Possuo formação superior em Geologia pela UNESP/Rio Claro. Ao longo da minha carreira profissional, atuei como analista ambiental em empresa de consultoria voltada ao ramo de Gerenciamento de Áreas Contaminadas.</p>
       </div>
     </section>
-    <section id="projeto" class="projects active">
+    <section id="projeto" class="projects">
       <h1 class="projetosTitulo">Meus Projetos</h1>
       <div class="projeto-container">
         <div class="projeto-card">
@@ -39,11 +41,33 @@
             <h1 class="projeto-titulo">Pixel Art</h1>
             <p class="projeto-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus at quia voluptas provident architecto quod vitae hic odio qui eum aperiam aspernatur veritatis dicta, nihil esse molestias dolore modi vel?</p>
             <div class="projeto-btn">
-              <button class="projeto-btn-git">Github</button>
+              <a class="projeto-btn-git" href="https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto3_Pixel_Art" target="_blank"
+              ><button type="button" class="projeto-btn-git">Github</button></a>
+              <button class="project-btn-live">See Live</button>
+            </div>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <img class="projeto-img" src="./imagens/To-doList.png" alt="">
+          <div class="projeto-content">
+            <h1 class="projeto-titulo">To-do List</h1>
+            <p class="projeto-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus at quia voluptas provident architecto quod vitae hic odio qui eum aperiam aspernatur veritatis dicta, nihil esse molestias dolore modi vel?</p>
+            <div class="projeto-btn">
+              <a class="projeto-btn-git" href="https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto4_To_Do_List" target="_blank"
+              ><button class="projeto-btn-git">Github</button></a>
+              <button class="project-btn-live">See Live</button>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section id="contact" class="contato">
+      <form class="form-contato" action="">
+        <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome">
+        <input type="text" name="email" id="email" autocomplete="off" placeholder="Email">
+        <textarea name="msg" id="msg" placeholder="Mensagem" autocomplete="oss" cols="30" rows="10"></textarea>
+        <button type="submit" class="botaoForm">Enviar</button>
+      </form>
     </section>
   <script src="script.js"></script>
   </body>
