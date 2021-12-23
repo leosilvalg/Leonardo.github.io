@@ -149,14 +149,11 @@ body {
 }
 .projetosTitulo {
   font-size: 100px;
-  background-color: #252525;
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 50px;
-  color: #1a1a1a;
+  color: #fff;
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 8px transparent;
 }
 
 .projeto-container {
