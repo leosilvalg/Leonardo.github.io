@@ -19,13 +19,13 @@
       </nav>
     </header>
     <section class="home-section active">
-      <h1 class="nome">Olá, eu sou o <br> Leonardo, e esse é o meu portfólio!</h1>
+      <h1 class="nome">Olá, eu sou o <br> Leonardo. Bem vindo(a) ao meu portfólio!</h1>
     </section>
     <section id="sobreLeo" class="sobreMim">
       <div class="sobre">
         <div class="sobreImagem">
           <img src="./imagens/Leonardo.jpg" class="imagem" alt="Foto do perfil">
-          <button class="botao">Download cv</button>
+          <a href="https://drive.google.com/file/d/1qxLlOEfPNV8RoaK02UIBx4t6s1CLwLua/view?usp=sharing" target="_blank"><button class="botao">Download cv</button></a>
         </div>
         <p class="sobreTexto">Bem vindos e bem vindas ao meu portifólio pessoal. Sou o Leonardo, tenho 27 anos, e sou aluno de desenvolvimento web full stack na Trybe - Turma 19. Previsão de término do curso - Novembro de 2022.
         <br>
@@ -55,7 +55,7 @@
           <img class="projeto-img" src="./imagens/To-doList.png" alt="Imagem do projeto To-do List">
           <div class="projeto-content">
             <h1 class="projeto-titulo">To-do List</h1>
-            <p class="projeto-info">Criação de uma página web que simula uma lista de tarefas a serem cumpridas. A lista permite ao usuário adicionar as tarefas em ordem ordenada, selecionar item, mover a ordem de itens selecionados, marcar itens como 'realizados', salvar a lista e limpar/reinicar a aplicação.</p>
+            <p class="projeto-info">Criação de uma página web que simula uma lista de tarefas a serem cumpridas. A lista permite ao usuário adicionar tarefas de maneira ordenada e manipular a lista de diversas maneiras.</p>
             <div class="projeto-btn">
               <a class="projeto-btn-git" href="https://github.com/leosilvalg/To-Do-List-Trybe-Project" target="_blank"
               ><button class="projeto-btn-git">Github</button></a>
@@ -64,14 +64,14 @@
           </div>
         </div>
         <div class="projeto-card">
-          <img class="projeto-img" src="./imagens/lessons.png" alt="Imagem do projeto lessons learned">
+          <img class="projeto-img" src="./imagens/guessColor.png" alt="Imagem do projeto To-do List">
           <div class="projeto-content">
-            <h1 class="projeto-titulo">Lessons Learned</h1>
-            <p class="projeto-info">Página web utilizando apenas HTML e CSS. O objetivo foi apresentar os conhecimentos obtidos ao final do terceiro bloco de conteúdo na Trybe.</p>
+            <h1 class="projeto-titulo">Guess the Color</h1>
+            <p class="projeto-info">Implementação de uma página web que simula um game, cujo objetivo é advinhar qual a cor correta com base em um código de cores RGB gerado aleatóriamente.</p>
             <div class="projeto-btn">
-              <a class="projeto-btn-git" href="https://github.com/leosilvalg/Lessons-Learned-Trybe-Project" target="_blank"
+              <a class="projeto-btn-git" href="https://github.com/leosilvalg/Color-Guess-Trybe-Project" target="_blank"
               ><button class="projeto-btn-git">Github</button></a>
-              <a class="project-btn-live" href="https://leosilvalg.github.io/Lessons-Learned-Trybe-Project/" target="_blank"><button class="project-btn-live" type="button">See Live</button></a>
+              <a class="project-btn-live" href="https://leosilvalg.github.io/Color-Guess-Trybe-Project/" target="_blank"><button class="project-btn-live" type="button">See Live</button></a>
             </div>
           </div>
         </div>
@@ -79,11 +79,16 @@
     </section>
     <section id="contact" class="contato">
       <form class="form-contato" action="https://formsubmit.co/leonardorc.geo@gmail.com" method="POST">
+        <span id="span">Entre em contato enviando suas opniões sobre meu portfólio. Qualquer critica construtiva será muito bem vinda.</span>
         <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome">
         <input type="email" name="email" id="email" autocomplete="off" placeholder="Email">
         <textarea name="msg" id="msg" placeholder="Mensagem" autocomplete="oss" cols="30" rows="10"></textarea>
         <button type="submit" class="botaoForm">Enviar</button>
       </form>
+      <div id="logos">
+        <a href="https://github.com/leosilvalg" target="_blank"><img class="logoGit" src="./imagens/git.png" alt="Logo do Github"></a>
+        <a href="https://www.linkedin.com/in/leonardo-gs/" target="_blank"><img class="logoLin" src="./imagens/lin.png" alt="Logo do Linkedin">
+    </div>
     </section>
   <script src="script.js"></script>
   </body>

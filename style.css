@@ -12,6 +12,9 @@ body {
   min-height: 100vh;
   background-color: #191919;
   font-family: sans-serif;
+  background-image: url('./imagens/teste.png');
+  background-size: auto;
+  background-repeat:round;
 }
 
 .barraNavegacao {
@@ -22,7 +25,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1a1a1a;
+  background-color: #000c30;
   z-index: 9;
 }
 
@@ -32,7 +35,7 @@ body {
 }
 
 .link a{
-  color: #fff;
+  color: #fffEFD;
   opacity: 0.5;
   text-decoration: none;
   text-transform: capitalize;
@@ -41,6 +44,7 @@ body {
   line-height: 80px;
   transition: .5s;
   font-size: 20px;
+  transition: 0.9s;
 }
 
 .link a:hover, .link.active a{
@@ -56,10 +60,11 @@ body {
   position:fixed;
   top: 0;
   opacity: 0;
+  transition: .4s;
 }
 
 .nome {
-  color: #fff;
+  color: #fffEFD;
   font-size: 120px;
   font-weight: 300;
 }
@@ -88,17 +93,19 @@ body {
   position: fixed;
   top: 0;
   opacity: 0;
+  transition: .4s;
 }
 
 .sobre {
   width: 100%;
   display: grid;
   grid-template-columns: 30% 65%;
+  
 }
 
 .sobreTexto {
-  color: #fff;
-  opacity: 0.6;
+  color: #fffEFD;
+  opacity: 0.8;
   font-size: 20px;
   line-height: 40px;
   text-align: justify;
@@ -114,10 +121,11 @@ body {
   height: 100%;
   object-fit: cover;
   padding: 0 30px 0 0;
+  border-radius: 30px;
 }
 
 .botao {
-  color: #fff;
+  color: #fffEFD;
   font-size: 18px;
   transition: .5s;
   background-color: rgba(0, 0, 0, 0.5);
@@ -133,7 +141,7 @@ body {
 }
 
 .botao:hover {
-  border: 1px solid white;
+  border: 1px solid #fffEFD;
   background: #1a1a1a;
 }
 
@@ -144,14 +152,14 @@ body {
   position: fixed;
   top: 0;
   opacity: 0;
-  
+  transition: .4s;
 }
 .projetosTitulo {
   font-size: 100px;
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 50px;
-  color: #fff;
+  color: #fffEFD;
   background-clip: text;
 }
 
@@ -179,7 +187,7 @@ body {
 .projeto-content{
   position: relative;
   padding: 40px;
-  color: #fff;
+  color: #fffEFD;
   transition: .5s;
   opacity: 0;
 }
@@ -210,7 +218,7 @@ body {
   font-size: 18px;
   border: none;
   background: #000;
-  color: #fff;
+  color: #fffEFD;
   cursor: pointer;
   text-align: center;
 }
@@ -221,7 +229,7 @@ body {
   font-size: 18px;
   border: none;
   background: #000;
-  color: #fff;
+  color: #fffEFD;
   cursor: pointer;
   text-align: center;
 }
@@ -243,22 +251,35 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  gap: 100px;
+  text-align: center;
+  align-items: center;
+  transition: .4s;
+}
+
+#span {
+  color: #fffEFD;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-align: justify;
 }
 
 .form-contato input, .form-contato textarea {
   width: 100%;
   height: 40px;
   background: rgba(255, 255, 255, 0.2);
-  border: 1px solid #fff;
+  border: 1px solid #fffEFD;
   margin-bottom: 30px;
   border-radius: 5px;
-  color: #fff;
+  color: #fffEFD;
   padding: 5px 10px;
 }
 
 ::placeholder {
-  color: #fff;
+  color: #fffEFD;
 }
 
 #msg {
@@ -269,7 +290,7 @@ body {
 
 .botaoForm {
   background: #ff4f4f;
-  color: #fff;
+  color: #fffEFD;
   text-transform: capitalize;
   padding: 15px 40px;
   display: block;
@@ -277,4 +298,28 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+#logos {
+  display: grid;
+  gap: 10px;
+  width: max-content;
+  gap:150px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.logoGit {
+  width:70px;
+  height: 70px
+}
+
+.logoLin {
+  width: fit-content;
+  height: 60px;
+}
+
+.logoGm {
+  width: fit-content;
+  height: 60px;
 }
